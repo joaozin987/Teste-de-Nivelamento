@@ -1,21 +1,28 @@
 <template>
   <div>
     <h1>Operadoras Ativas na ANS</h1>
-    <input v-model="search" placeholder="Buscar por Nome" @input="filterOperadoras" />
-    <a href="">Pesquisar</a>
+  
     <table>
       <thead>
         <tr>
           <th>Registro ANS</th>
-          <th>Nome</th>
-          <th>CNPJ</th>
+           <th>CNPJ</th>
+          <th>Razao_Social</th>
+           <th>Nome_Fantasia</th>
+          <th>Modalidade</th>
+           <th>Logradouro</th>
+            <th>CEP</th>
         </tr>
       </thead>
       <tbody>
-        <tr v-for="operadora in operadorasFiltradas" :key="operadora['Registro ANS']">
-          <td>{{ operadora['Registro ANS'] }}</td>
-          <td>{{ operadora['Nome Fantasia'] }}</td>
-          <td>{{ operadora['CNPJ'] }}</td>
+        <tr v-for="operadora in operadorasFiltradas" :key="operadora['Registro_ANS']">
+          <td>{{ operadora['Registro_ANS'] }}</td>
+           <td>{{ operadora['CNPJ'] }}</td>
+           <td>{{ operadora['Razao_Social'] }}</td>
+          <td>{{ operadora['Nome_Fantasia'] }}</td>
+          <td>{{ operadora['Modalidade'] }}</td>
+          <td>{{ operadora['Logradouro'] }}</td>
+          <td>{{ operadora['CEP'] }}</td>
         </tr>
       </tbody>
     </table>

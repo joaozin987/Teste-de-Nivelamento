@@ -1,0 +1,15 @@
+# Ignorar arquivos de dependências e logs
+*.log
+*.sqlite
+*.db
+
+# Ignorar arquivos compactados
+*.zip
+*.rar
+
+# Ignorar arquivos CSV grandes ou temporários
+*.csv
+
+# Ignorar configurações do VSCode e IDEs
+.vscode/
+.idea/
