@@ -46,15 +46,11 @@ Para esta parte do projeto, foram criados scripts em PostgreSQL:
 - Também foram instalados os Dados Cadastrais das Operadoras Ativas na ANS em formato CSV, armazenados na pasta **operadoras_ativas**.
 
 ### 3.1 Estruturação de Tabelas
-
-Queries foram elaboradas para estruturar as tabelas necessárias para o arquivo CSV, bem como para importar o conteúdo dos arquivos preparados, garantindo o encoding correto.
+      Criei um arquivo com o nome **estrutura.sql** que nele exportei do **postgres** as alterações e as criações das tabelas.
 
 ### 3.2 Análises
 
-Desenvolvi queries analíticas para responder às seguintes perguntas:
-
-- Quais as 10 operadoras com maiores despesas em "EVENTOS/SINISTROS CONHECIDOS OU AVISADOS DE ASSISTÊNCIA À SAÚDE MÉDICO HOSPITALAR" **no último trimestre**?
-- Quais as 10 operadoras com maiores despesas nessa categoria no **último ano**?
+Desenvolvi queries analíticas e as coloquei no arquivo **queries.sql** :
 
 ## 4. Interface Web
 
@@ -67,6 +63,7 @@ Os dados da só seram mostrados na interface quando o arquivo **app.py** for exe
 Utilizei o CSV do item **Operadoras Ativas na ANS** e criei um servidor com uma rota que realiza uma busca textual na lista de cadastros de operadoras preparada anteriormente e retorna os registros mais relevantes.
 
 ## 6. Postman
-
-Elaborei uma coleção no Postman para demonstrar o resultado das buscas realizadas. Essa coleção permite a visualização e testes das rotas disponíveis no servidor.
+Ao testar o **postamn** verifique que o arquivo **app.py** está executado.
+Elaborei uma coleção no Postman para demonstrar o resultado das buscas realizadas. 
+Essa coleção permite a visualização e testes das rotas disponíveis no servidor.
 
