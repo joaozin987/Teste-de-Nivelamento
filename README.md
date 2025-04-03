@@ -6,7 +6,7 @@
    source venv/bin/activate
 1.1 **Executar o arquivo**
  
-    python arquivo.py
+     python arquivo.py
     
 ## 1. Web Scraping
 
