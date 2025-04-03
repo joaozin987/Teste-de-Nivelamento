@@ -5,6 +5,7 @@
    ```bash
    source venv/bin/activate
 1.1 **Executar o arquivo**
+   ```bash
     python arquivo.py
     
 ## 1. Web Scraping
