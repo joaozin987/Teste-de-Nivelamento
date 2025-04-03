@@ -2,8 +2,6 @@
 -- PostgreSQL database dump
 --
 
--- Dumped from database version 17.2
--- Dumped by pg_dump version 17.2
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -114,11 +112,6 @@ CREATE TABLE public.operadoras_ativas (
 );
 
 
-ALTER TABLE public.operadoras_ativas OWNER TO postgres;
-
---
--- Name: temp_demonstrativos; Type: TABLE; Schema: public; Owner: postgres
---
 
 CREATE TABLE public.temp_demonstrativos (
     data date,
@@ -128,49 +121,4 @@ CREATE TABLE public.temp_demonstrativos (
     vl_saldo_inicial numeric,
     vl_saldo_final numeric
 );
-
-
-ALTER TABLE public.temp_demonstrativos OWNER TO postgres;
-
---
--- Name: demonstracoes_contabeis id; Type: DEFAULT; Schema: public; Owner: postgres
---
-
-ALTER TABLE ONLY public.demonstracoes_contabeis ALTER COLUMN id SET DEFAULT nextval('public.demonstracoes_contabeis_id_seq'::regclass);
-
-
---
--- Name: demonstrativos_contabeis id; Type: DEFAULT; Schema: public; Owner: postgres
---
-
-ALTER TABLE ONLY public.demonstrativos_contabeis ALTER COLUMN id SET DEFAULT nextval('public.demonstrativos_contabeis_id_seq'::regclass);
-
-
---
--- Name: demonstracoes_contabeis demonstracoes_contabeis_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
---
-
-ALTER TABLE ONLY public.demonstracoes_contabeis
-    ADD CONSTRAINT demonstracoes_contabeis_pkey PRIMARY KEY (id);
-
-
---
--- Name: demonstrativos_contabeis demonstrativos_contabeis_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
---
-
-ALTER TABLE ONLY public.demonstrativos_contabeis
-    ADD CONSTRAINT demonstrativos_contabeis_pkey PRIMARY KEY (id);
-
-
---
--- Name: operadoras_ativas operadoras_ativas_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
---
-
-ALTER TABLE ONLY public.operadoras_ativas
-    ADD CONSTRAINT operadoras_ativas_pkey PRIMARY KEY (operadora_id);
-
-
---
--- PostgreSQL database dump complete
---
 
